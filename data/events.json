@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "title": "Plaza Day",
+        "date": "2026-02-05",
+        "time": "09:00 - 15:00",
+        "description": "Visit our stall at UCT Plaza Day! Meet the committee, grab some swag, and sign up for the society.",
+        "type": "Social",
+        "location": "UCT Upper Campus Plaza"
+    },
+    {
+        "id": 2,
+        "title": "Opening Event",
+        "date": "2026-02-13",
+        "time": "17:00 - 19:00",
+        "description": "Official welcome event for new members. Introduction to the year's roadmap and networking.",
+        "type": "Social",
+        "location": "Molly Blackburn Hall"
+    },
+    {
+        "id": 3,
+        "title": "Basics of Quantum Computing",
+        "date": "2026-03-12",
+        "time": "18:00 - 19:30",
+        "description": "An introductory lecture on Qubits, Superposition, and Entanglement. No physics background required!",
+        "type": "Educational",
+        "location": "Computer Science 2A"
+    },
+    {
+        "id": 4,
+        "title": "Qiskit Hands-on Workshop",
+        "date": "2026-04-16",
+        "time": "16:00 - 19:00",
+        "description": "Bring your laptops! We will write our first quantum circuits using IBM Qiskit and run them on real hardware.",
+        "type": "Educational",
+        "location": "Snape LT1"
+    },
+    {
+        "id": 5,
+        "title": "Quantum Games Night",
+        "date": "2026-05-08",
+        "time": "18:00 - 21:00",
+        "description": "Relax before exams with Quantum Chess and other science-themed board games. Pizza provided!",
+        "type": "Social",
+        "location": "Beattie"
+    },
+    {
+        "id": 6,
+        "title": "Qiskit Global Summer School",
+        "date": "2026-07-20",
+        "time": "09:00 - 17:00",
+        "description": "Two-week intensive summer school hosted globally by IBM. Viewing parties and study groups available.",
+        "type": "Educational",
+        "location": "Online / CS Lab"
+    },
+    {
+        "id": 7,
+        "title": "Meet & Greet",
+        "date": "2026-08-07",
+        "time": "13:00 - 14:00",
+        "description": "Post-vac catchup. Share what you learned during the summer school and meet new members.",
+        "type": "Social",
+        "location": "Heritage Site"
+    },
+    {
+        "id": 8,
+        "title": "Quantum Talk / Outing",
+        "date": "2026-09-18",
+        "time": "14:00 - 17:00",
+        "description": "Field trip to a local research lab or a guest lecture from an industry expert.",
+        "type": "Educational",
+        "location": "TBD"
+    },
+    {
+        "id": 9,
+        "title": "Qiskit Fall Fest",
+        "date": "2026-10-15",
+        "time": "09:00 - 18:00",
+        "description": "A student-led festival celebrating quantum computing. Hackathon, talks, and prizes!",
+        "type": "Educational",
+        "location": "UCT New Engineering Building"
+    },
+    {
+        "id": 10,
+        "title": "UCT QCS AGM",
+        "date": "2026-11-06",
+        "time": "17:00 - 18:30",
+        "description": "Annual General Meeting to elect the new committee and reflect on the year.",
+        "type": "Admin",
+        "location": "Leslie Social"
+    },
+    {
+        "id": 11,
+        "title": "End Year Celebration",
+        "date": "2026-11-20",
+        "time": "18:00 - 22:00",
+        "description": "Closing the year with a bang! Awards ceremony and social dinner.",
+        "type": "Social",
+        "location": "Kirstenbosch (TBC)"
+    }
+]

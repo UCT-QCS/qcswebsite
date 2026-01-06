@@ -1,0 +1,68 @@
+[
+    {
+        "role": "Chairperson",
+        "name": "Bonga Njamela",
+        "image": "assets/logo.png",
+        "linkedin": "https://www.linkedin.com/in/bonga-njamela-982873200/"
+    },
+    {
+        "role": "Vice Chair",
+        "name": "Siphesihle Gema",
+        "image": "assets/logo.png",
+        "linkedin": "https://www.linkedin.com/in/siphesihle-gema-b8b318257/"
+    },
+    {
+        "role": "Secretary",
+        "name": "TBD",
+        "image": "assets/logo.png",
+        "linkedin": "https://www.linkedin.com/company/uct-qcs"
+    },
+    {
+        "role": "Treasurer",
+        "name": "TBD",
+        "image": "assets/logo.png",
+        "linkedin": "https://www.linkedin.com/company/uct-qcs"
+    },
+    {
+        "role": "Social Media Manager",
+        "name": "TBD",
+        "image": "assets/logo.png",
+        "linkedin": "https://www.linkedin.com/company/uct-qcs"
+    },
+    {
+        "role": "Communications Manager",
+        "name": "TBD",
+        "image": "assets/logo.png",
+        "linkedin": "https://www.linkedin.com/company/uct-qcs"
+    },
+    {
+        "role": "Marketing Director",
+        "name": "TBD",
+        "image": "assets/logo.png",
+        "linkedin": "https://www.linkedin.com/company/uct-qcs"
+    },
+    {
+        "role": "Bookkeeper",
+        "name": "TBD",
+        "image": "assets/logo.png",
+        "linkedin": "https://www.linkedin.com/company/uct-qcs"
+    },
+    {
+        "role": "Student Representative",
+        "name": "TBD",
+        "image": "assets/logo.png",
+        "linkedin": "https://www.linkedin.com/company/uct-qcs"
+    },
+    {
+        "role": "Events Planner",
+        "name": "TBD",
+        "image": "assets/logo.png",
+        "linkedin": "https://www.linkedin.com/company/uct-qcs"
+    },
+    {
+        "role": "Quantum Education Director",
+        "name": "TBD",
+        "image": "assets/logo.png",
+        "linkedin": "https://www.linkedin.com/company/uct-qcs"
+    }
+]

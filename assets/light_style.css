@@ -1,0 +1,354 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap');
+
+/* Global Styles - Light Mode */
+body,
+.stApp {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF !important;
+    color: #111111 !important;
+    /* Force dark text to override Dark Theme defaults */
+}
+
+/* Force standard text elements to be dark */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+span,
+div {
+    color: #111111 !important;
+}
+
+/* Explicit exceptions for things that should not be dark (like buttons or highlighted text) can be added below */
+.stButton>button {
+    color: #F0F0F0 !important;
+}
+
+.stButton>button:hover {
+    color: #F0F0F0 !important;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    justify-content: center;
+}
+
+/* Custom Streamlit Header Adjustments */
+header[data-testid="stHeader"] {
+    background-color: transparent;
+    justify-content: center;
+}
+
+/* Force Navigation Links to be dark in light mode */
+div[data-testid="stPageLink"] a {
+    color: #034863 !important;
+}
+
+div[data-testid="stPageLink"] a:hover {
+    color: #0056b3 !important;
+    background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Hero Section Styles */
+.hero-container {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: radial-gradient(circle at center, rgba(7, 158, 209, 0.1) 0%, rgb(99, 115, 146) 70%);
+    border-radius: 20px;
+    margin-bottom: 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(90deg, #0056b3, #6610f2);
+    /* Darker blue/purple for light mode */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #000000;
+    /* Darker for better contrast */
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+/* Feature/Card Styles */
+.feature-card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    backdrop-filter: blur(10px);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-color: #0088FF;
+}
+
+.card-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #0056b3;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #31333F;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #FFFFFF;
+    /* Darker for better contrast */
+    line-height: 1.5;
+}
+
+/* CTA Button Wrapper */
+.cta-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* Custom Button Styling override */
+div.stButton>button {
+    background: linear-gradient(90deg, #007bff 0%, #00d4ff 100%) !important;
+    color: #FFFFFF !important;
+    /* White text for contrast on light mode buttons */
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    transition: all 0.3s ease;
+}
+
+/* Ensure inner text is white */
+div.stButton>button p {
+    color: #FFFFFF !important;
+}
+
+div.stButton>button:hover {
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5) !important;
+    background: linear-gradient(90deg, #0069d9 0%, #00c4f0 100%) !important;
+    color: #FFFFFF !important;
+}
+
+/* Explicitly target Form Submit Buttons which sometimes differ */
+div[data-testid="stFormSubmitButton"]>button {
+    background: linear-gradient(90deg, #00ccff 0%, #8ce2f3 100%) !important;
+    color: #FFFFFF !important;
+    border: none;
+}
+
+div[data-testid="stFormSubmitButton"]>button:hover {
+    box-shadow: 0 0 15px rgba(69, 201, 224, 0.5) !important;
+}
+
+/* Custom Expander Styling to match Buttons */
+div[data-testid="stExpander"] details summary {
+    background: linear-gradient(90deg, #71b2f8 0%, #92e3f3 100%) !important;
+    color: #FFFFFF !important;
+    border-radius: 5px;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 0.5rem;
+    border: none !important;
+}
+
+div[data-testid="stExpander"] details summary:hover {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3) !important;
+}
+
+/* Force Input Fields to be Light in Light Mode */
+input,
+textarea,
+select,
+[data-baseweb="select"] {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    border-color: #ccc !important;
+}
+
+/* Streamlit specific input wrappers */
+.stTextInput>div>div>input {
+    color: #000000 !important;
+    background-color: #ffffff !important;
+}
+
+/* Select Box Text */
+[data-baseweb="select"]>div {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+/* Ensure dropdown menu items are visible */
+[data-baseweb="menu"] {
+    background: linear-gradient(90deg, #71b2f8 0%, #92e3f3 100%) !important;
+}
+
+[data-baseweb="menu"] li,
+[data-baseweb="menu"] li div {
+    background-color: #0069a7ff !important;
+    /* Let container gradient show */
+    color: #000000 !important;
+    font-weight: 500;
+}
+
+/* Dropdown Popover Container (The actual list) */
+[data-baseweb="popover"],
+[data-baseweb="popover"]>div,
+[data-baseweb="menu"],
+[data-baseweb="menu"]>div {
+    background: linear-gradient(90deg, #71b2f8 0%, #92e3f3 100%) !important;
+    color: #000000 !important;
+    border-radius: 4px;
+}
+
+/* Items inside the menu */
+[data-baseweb="menu"] li {
+    background-color: transparent !important;
+    color: #000000 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Hover state for items */
+[data-baseweb="menu"] li:hover,
+[data-baseweb="menu"] li[aria-selected="true"] {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    color: #000000 !important;
+}
+
+/* Selected option text color in the main box (Closed State) */
+div[data-baseweb="select"]>div span {
+    color: #000000 !important;
+}
+
+div[data-baseweb="select"]>div {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    border-color: #cccccc !important;
+}
+
+/* Icons in selectbox (e.g. arrow) */
+div[data-baseweb="select"] svg {
+    fill: #000000 !important;
+    color: #000000 !important;
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    margin-top: 5rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    color: #555555;
+    /* Darker for better contrast */
+    font-size: 0.8rem;
+}
+
+/* Highlight Text */
+.highlight-text {
+    color: #0056b3;
+    font-weight: bold;
+}
+
+/* CALENDAR STYLES (Light Mode) */
+.calendar-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-top: 2rem;
+}
+
+.calendar-header {
+    text-align: center;
+    font-weight: bold;
+    color: #0056b3;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+}
+
+.calendar-day {
+    background: rgba(0, 0, 0, 0.02);
+    padding: 15px;
+    min-height: 100px;
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.calendar-day:hover {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: #0056b3;
+}
+
+.calendar-day.empty {
+    background: transparent;
+    border: none;
+    cursor: default;
+}
+
+.day-number {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.event-marker {
+    font-size: 0.8rem;
+    margin-bottom: 2px;
+    padding: 2px 5px;
+    border-radius: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.event-marker.Social {
+    background: rgba(0, 123, 255, 0.1);
+    color: #0056b3;
+    border: 1px solid rgba(0, 123, 255, 0.2);
+}
+
+.event-marker.Educational {
+    background: rgba(102, 16, 242, 0.1);
+    color: #6610f2;
+    border: 1px solid rgba(102, 16, 242, 0.2);
+}
+
+.event-marker.Admin {
+    background: rgba(0, 0, 0, 0.05);
+    color: #555;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.current-day {
+    border: 2px solid #0056b3;
+    box-shadow: 0 0 10px rgba(0, 86, 179, 0.2);
+}
