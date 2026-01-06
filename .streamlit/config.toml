@@ -1,0 +1,12 @@
+[theme]
+base = "dark"
+primaryColor = "#055858ff"
+backgroundColor = "transparent"
+secondaryBackgroundColor = "#f4ffffff 1%"
+textColor = "#FAFAFA"
+font = "sans serif"
+
+[theme.sidebar]
+backgroundColor="transparent"
+secondaryBackgroundColor="#00ccffff"
+borderColor="black"
