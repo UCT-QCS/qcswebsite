@@ -59,7 +59,7 @@ div[data-testid="stPageLink"] a:hover {
 
 /* Hero Section Styles */
 /* Target the st.container wrapping the hero section */
-[data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #hero-marker) {
+[data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #hero-marker)>div {
     text-align: center;
     padding: 4rem 2rem;
     background: radial-gradient(circle at center, rgba(7, 158, 209, 0.1) 0%, rgb(99, 115, 146) 70%);
@@ -365,8 +365,28 @@ div[data-baseweb="select"] svg {
 /* 2. Mobile Rules */
 @media (max-width: 768px) {
 
-    /* Hide Desktop Navbar */
-    [data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #desktop-navbar) {
+    /* Use Sibling Selector to target the navbar columns */
+    /* Only allow horizontal scroll, no wrap */
+    [data-testid="stElementContainer"]:has(#desktop-navbar)~[data-testid="stHorizontalBlock"] {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        gap: 10px !important;
+        padding-bottom: 5px;
+        /* Scrollbar space */
+        min-width: 100%;
+    }
+
+    /* Style the columns (links) to not shrink */
+    [data-testid="stElementContainer"]:has(#desktop-navbar)~[data-testid="stHorizontalBlock"] [data-testid="column"] {
+        min-width: 80px;
+        /* Ensure tabs have width */
+        flex: 0 0 auto !important;
+    }
+
+    /* Hide the Desktop Toggle Button (Last Column) on Mobile */
+    [data-testid="stElementContainer"]:has(#desktop-navbar)~[data-testid="stHorizontalBlock"] [data-testid="column"]:last-child {
         display: none !important;
     }
 
@@ -376,7 +396,6 @@ div[data-baseweb="select"] svg {
         position: fixed;
         top: 0.8rem;
         right: 4rem;
-        /* Left of Streamlit hamburger */
         z-index: 999999;
         width: auto !important;
         background: transparent;
@@ -386,7 +405,6 @@ div[data-baseweb="select"] svg {
 
     [data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #mobile-controls) button {
         background: rgba(255, 255, 255, 0.8) !important;
-        /* Semi-transparent background */
         border: 1px solid rgba(0, 86, 179, 0.3);
         color: #000 !important;
         padding: 0.2rem 0.6rem;

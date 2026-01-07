@@ -24,8 +24,8 @@ header[data-testid="stHeader"] {
 
 /* Hero Section Styles */
 /* Target the st.container wrapping the hero section */
-/* Use direct child selector > to avoid targeting the root app container */
-[data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #hero-marker) {
+/* Use descendant selector to look inside the vertical block */
+[data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #hero-marker)>div {
     text-align: center;
     padding: 4rem 2rem;
     background: radial-gradient(circle at center, rgba(0, 255, 255, 0.1) 0%, rgba(14, 17, 23, 1) 70%);
@@ -248,8 +248,28 @@ div.stButton>button:hover {
 /* 2. Mobile Rules */
 @media (max-width: 768px) {
 
-    /* Hide Desktop Navbar */
-    [data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #desktop-navbar) {
+    /* Use Sibling Selector to target the navbar columns */
+    /* Only allow horizontal scroll, no wrap */
+    [data-testid="stElementContainer"]:has(#desktop-navbar)~[data-testid="stHorizontalBlock"] {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        gap: 10px !important;
+        padding-bottom: 5px;
+        /* Scrollbar space */
+        min-width: 100%;
+    }
+
+    /* Style the columns (links) to not shrink */
+    [data-testid="stElementContainer"]:has(#desktop-navbar)~[data-testid="stHorizontalBlock"] [data-testid="column"] {
+        min-width: 80px;
+        /* Ensure tabs have width */
+        flex: 0 0 auto !important;
+    }
+
+    /* Hide the Desktop Toggle Button (Last Column) on Mobile */
+    [data-testid="stElementContainer"]:has(#desktop-navbar)~[data-testid="stHorizontalBlock"] [data-testid="column"]:last-child {
         display: none !important;
     }
 
@@ -259,7 +279,6 @@ div.stButton>button:hover {
         position: fixed;
         top: 0.8rem;
         right: 4rem;
-        /* Left of Streamlit hamburger */
         z-index: 999999;
         width: auto !important;
         background: transparent;
@@ -269,7 +288,6 @@ div.stButton>button:hover {
 
     [data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #mobile-controls) button {
         background: rgba(14, 17, 23, 0.8);
-        /* Semi-transparent background */
         border: 1px solid rgba(0, 255, 255, 0.3);
         padding: 0.2rem 0.6rem;
         font-size: 1.2rem;
