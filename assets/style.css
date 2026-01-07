@@ -234,3 +234,10 @@ div.stButton>button:hover {
     color: #00FFFF;
     font-weight: bold;
 }
+
+/* Mobile Navigation Visibility */
+@media (max-width: 768px) {
+    .block-container [data-testid="stHorizontalBlock"]:first-of-type {
+        display: none !important;
+    }
+}

@@ -352,3 +352,10 @@ div[data-baseweb="select"] svg {
     border: 2px solid #0056b3;
     box-shadow: 0 0 10px rgba(0, 86, 179, 0.2);
 }
+
+/* Mobile Navigation Visibility */
+@media (max-width: 768px) {
+    .block-container [data-testid="stHorizontalBlock"]:first-of-type {
+        display: none !important;
+    }
+}
