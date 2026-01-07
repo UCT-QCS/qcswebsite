@@ -23,7 +23,9 @@ header[data-testid="stHeader"] {
 }
 
 /* Hero Section Styles */
-.hero-container {
+/* Target the st.container wrapping the hero section */
+/* Use direct child selector > to avoid targeting the root app container */
+[data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #hero-marker) {
     text-align: center;
     padding: 4rem 2rem;
     background: radial-gradient(circle at center, rgba(0, 255, 255, 0.1) 0%, rgba(14, 17, 23, 1) 70%);
@@ -236,8 +238,42 @@ div.stButton>button:hover {
 }
 
 /* Mobile Navigation Visibility */
+/* Mobile Navigation & Toggle Logic */
+
+/* 1. Hide Mobile Controls by default (Desktop) */
+[data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #mobile-controls) {
+    display: none;
+}
+
+/* 2. Mobile Rules */
 @media (max-width: 768px) {
-    .block-container [data-testid="stHorizontalBlock"]:first-of-type {
+
+    /* Hide Desktop Navbar */
+    [data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #desktop-navbar) {
         display: none !important;
+    }
+
+    /* Show and Position Mobile Toggle */
+    [data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #mobile-controls) {
+        display: flex !important;
+        position: fixed;
+        top: 0.8rem;
+        right: 4rem;
+        /* Left of Streamlit hamburger */
+        z-index: 999999;
+        width: auto !important;
+        background: transparent;
+        padding: 0;
+        margin: 0;
+    }
+
+    [data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #mobile-controls) button {
+        background: rgba(14, 17, 23, 0.8);
+        /* Semi-transparent background */
+        border: 1px solid rgba(0, 255, 255, 0.3);
+        padding: 0.2rem 0.6rem;
+        font-size: 1.2rem;
+        min-height: auto;
+        border-radius: 8px;
     }
 }

@@ -12,23 +12,24 @@ st.set_page_config(
 helpers.render_navigation("home.py")
 
 # --- HERO SECTION ---
-st.markdown('<div class="hero-container">', unsafe_allow_html=True)
-cola, col_b, col_c = st.columns([2.45,1,2])
-with col_b:
-    st.image("assets/logo.png", width=150)
+# --- HERO SECTION ---
+with st.container():
+    st.markdown('<div id="hero-marker"></div>', unsafe_allow_html=True)
+    cola, col_b, col_c = st.columns([2.45,1,2])
+    with col_b:
+        st.image("assets/logo.png", width=150)
 
-# Logo (centered)
-col1, col2, col3 = st.columns([1,2,1])
-with col2:
-    st.markdown('<h1 class="hero-title"; align="center">Quantum Computing Society</h1>', unsafe_allow_html=True)
-    st.markdown('<p class="hero-subtitle"; align="center">University of Cape Town</p>', unsafe_allow_html=True)
-    st.markdown("""
-    <p style='font-size: 1.2rem; color: #00d4ff; max-width: 800px; margin: 0 auto; line-height: 1.6;'; align="center">
-        Leading the promotion and advocation of Quantum Computing in Africa. <br>
-        Bridging the gap between academia and the quantum revolution.
-    </p>
-    """, unsafe_allow_html=True)
-    st.markdown('</div>', unsafe_allow_html=True)
+    # Logo (centered)
+    col1, col2, col3 = st.columns([1,2,1])
+    with col2:
+        st.markdown('<h1 class="hero-title"; align="center">Quantum Computing Society</h1>', unsafe_allow_html=True)
+        st.markdown('<p class="hero-subtitle"; align="center">University of Cape Town</p>', unsafe_allow_html=True)
+        st.markdown("""
+        <p style='font-size: 1.2rem; color: #00d4ff; max-width: 800px; margin: 0 auto; line-height: 1.6;'; align="center">
+            Leading the promotion and advocation of Quantum Computing in Africa. <br>
+            Bridging the gap between academia and the quantum revolution.
+        </p>
+        """, unsafe_allow_html=True)
 
 # --- FEATURES SECTION ---
 st.markdown("### Why Join UCT QCS?")
