@@ -2,7 +2,7 @@
 base = "dark"
 primaryColor = "#055858ff"
 backgroundColor = "transparent"
-secondaryBackgroundColor = "#f4ffffff 1%"
+secondaryBackgroundColor = "rgba(244, 255, 255, 0.1)"
 textColor = "#FAFAFA"
 font = "sans serif"
 
