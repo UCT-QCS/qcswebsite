@@ -54,7 +54,7 @@ def render_navigation(current_file_path=None):
     pages = [
         {"label": "Home", "path": "home.py"},
         {"label": "Events", "path": "pages/02_Events.py"},
-        {"label": "Community", "path": "pages/03_Members.py"},
+        {"label": "Community", "path": "pages/03_Community.py"},
         {"label": "Blog", "path": "pages/04_Blog.py"},
         {"label": "About", "path": "pages/05_About.py"},
     ]

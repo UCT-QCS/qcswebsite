@@ -12,7 +12,7 @@ st.set_page_config(
     layout="wide",
 )
 
-helpers.render_navigation("pages/03_Members.py")
+helpers.render_navigation("pages/03_Community.py")
 
 st.markdown("# 👥 Community Dashboard")
 

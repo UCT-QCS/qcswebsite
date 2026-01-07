@@ -96,7 +96,7 @@ with m_col2:
 
     st.markdown('<div class="cta-button-container">', unsafe_allow_html=True)
     if st.button("Become a Member"):
-        st.switch_page("pages/03_Members.py")
+        st.switch_page("pages/03_Community.py")
     st.markdown('</div>', unsafe_allow_html=True)
 
 # --- FOOTER ---
