@@ -59,7 +59,7 @@ div[data-testid="stPageLink"] a:hover {
 
 /* Hero Section Styles */
 /* Target the st.container wrapping the hero section */
-[data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #hero-marker)>div {
+[data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #hero-marker) {
     text-align: center;
     padding: 4rem 2rem;
     background: radial-gradient(circle at center, rgba(7, 158, 209, 0.1) 0%, rgb(99, 115, 146) 70%);

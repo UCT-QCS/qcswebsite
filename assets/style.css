@@ -25,7 +25,7 @@ header[data-testid="stHeader"] {
 /* Hero Section Styles */
 /* Target the st.container wrapping the hero section */
 /* Use descendant selector to look inside the vertical block */
-[data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #hero-marker)>div {
+[data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #hero-marker) {
     text-align: center;
     padding: 4rem 2rem;
     background: radial-gradient(circle at center, rgba(0, 255, 255, 0.1) 0%, rgba(14, 17, 23, 1) 70%);
@@ -241,6 +241,7 @@ div.stButton>button:hover {
 /* Mobile Navigation & Toggle Logic */
 
 /* 1. Hide Mobile Controls by default (Desktop) */
+/* Target the container holding the mobile controls */
 [data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #mobile-controls) {
     display: none;
 }
@@ -248,32 +249,12 @@ div.stButton>button:hover {
 /* 2. Mobile Rules */
 @media (max-width: 768px) {
 
-    /* Use Sibling Selector to target the navbar columns */
-    /* Only allow horizontal scroll, no wrap */
-    [data-testid="stElementContainer"]:has(#desktop-navbar)~[data-testid="stHorizontalBlock"] {
-        display: flex !important;
-        flex-direction: row !important;
-        flex-wrap: nowrap !important;
-        overflow-x: auto !important;
-        gap: 10px !important;
-        padding-bottom: 5px;
-        /* Scrollbar space */
-        min-width: 100%;
-    }
-
-    /* Style the columns (links) to not shrink */
-    [data-testid="stElementContainer"]:has(#desktop-navbar)~[data-testid="stHorizontalBlock"] [data-testid="column"] {
-        min-width: 80px;
-        /* Ensure tabs have width */
-        flex: 0 0 auto !important;
-    }
-
-    /* Hide the Desktop Toggle Button (Last Column) on Mobile */
-    [data-testid="stElementContainer"]:has(#desktop-navbar)~[data-testid="stHorizontalBlock"] [data-testid="column"]:last-child {
+    /* Hide Desktop Navbar Container completely on Mobile */
+    [data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #desktop-navbar) {
         display: none !important;
     }
 
-    /* Show and Position Mobile Toggle */
+    /* Show and Position Mobile Toggle Container */
     [data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #mobile-controls) {
         display: flex !important;
         position: fixed;
@@ -286,6 +267,7 @@ div.stButton>button:hover {
         margin: 0;
     }
 
+    /* Style the toggle button */
     [data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #mobile-controls) button {
         background: rgba(14, 17, 23, 0.8);
         border: 1px solid rgba(0, 255, 255, 0.3);
