@@ -402,7 +402,9 @@ div[data-baseweb="select"] svg {
         /* Slightly reduced padding for mobile */
     }
 
-    .hero-title {
+    .hero-title,
+    .hero-subtitle,
+    [data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #hero-marker) p {
         text-align: left !important;
         justify-content: flex-start !important;
     }
