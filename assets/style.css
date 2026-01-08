@@ -262,7 +262,6 @@ div.stButton>button:hover {
         right: 4rem;
         z-index: 999999;
         width: auto !important;
-        background: transparent;
         padding: 0;
         margin: 0;
     }
@@ -275,5 +274,16 @@ div.stButton>button:hover {
         font-size: 1.2rem;
         min-height: auto;
         border-radius: 8px;
+    }
+
+    /* Hero Section Mobile Alignment */
+    [data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #hero-marker) {
+        text-align: left !important;
+        padding: 2rem 1.5rem;
+    }
+
+    .hero-title {
+        text-align: left !important;
+        justify-content: flex-start !important;
     }
 }

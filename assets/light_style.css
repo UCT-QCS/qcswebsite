@@ -358,6 +358,7 @@ div[data-baseweb="select"] svg {
 /* Mobile Navigation & Toggle Logic */
 
 /* 1. Hide Mobile Controls by default (Desktop) */
+/* Target the container holding the mobile controls */
 [data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #mobile-controls) {
     display: none;
 }
@@ -365,32 +366,12 @@ div[data-baseweb="select"] svg {
 /* 2. Mobile Rules */
 @media (max-width: 768px) {
 
-    /* Use Sibling Selector to target the navbar columns */
-    /* Only allow horizontal scroll, no wrap */
-    [data-testid="stElementContainer"]:has(#desktop-navbar)~[data-testid="stHorizontalBlock"] {
-        display: flex !important;
-        flex-direction: row !important;
-        flex-wrap: nowrap !important;
-        overflow-x: auto !important;
-        gap: 10px !important;
-        padding-bottom: 5px;
-        /* Scrollbar space */
-        min-width: 100%;
-    }
-
-    /* Style the columns (links) to not shrink */
-    [data-testid="stElementContainer"]:has(#desktop-navbar)~[data-testid="stHorizontalBlock"] [data-testid="column"] {
-        min-width: 80px;
-        /* Ensure tabs have width */
-        flex: 0 0 auto !important;
-    }
-
-    /* Hide the Desktop Toggle Button (Last Column) on Mobile */
-    [data-testid="stElementContainer"]:has(#desktop-navbar)~[data-testid="stHorizontalBlock"] [data-testid="column"]:last-child {
+    /* Hide Desktop Navbar Container completely on Mobile */
+    [data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #desktop-navbar) {
         display: none !important;
     }
 
-    /* Show and Position Mobile Toggle */
+    /* Show and Position Mobile Toggle Container */
     [data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #mobile-controls) {
         display: flex !important;
         position: fixed;
@@ -403,6 +384,7 @@ div[data-baseweb="select"] svg {
         margin: 0;
     }
 
+    /* Style the toggle button */
     [data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #mobile-controls) button {
         background: rgba(255, 255, 255, 0.8) !important;
         border: 1px solid rgba(0, 86, 179, 0.3);
@@ -411,5 +393,17 @@ div[data-baseweb="select"] svg {
         font-size: 1.2rem;
         min-height: auto;
         border-radius: 8px;
+    }
+
+    /* Hero Section Mobile Alignment */
+    [data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #hero-marker) {
+        text-align: left !important;
+        padding: 2rem 1.5rem;
+        /* Slightly reduced padding for mobile */
+    }
+
+    .hero-title {
+        text-align: left !important;
+        justify-content: flex-start !important;
     }
 }
