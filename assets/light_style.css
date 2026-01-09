@@ -371,10 +371,8 @@ div[data-baseweb="select"] svg {
         display: none !important;
     }
 
-    /* Hide Streamlit Header on Mobile */
-    header[data-testid="stHeader"] {
-        display: none !important;
-    }
+    /* Restore visibility of Streamlit Header on Mobile */
+    /* header[data-testid="stHeader"] { display: none !important; } */
 
     /* Show and Position Mobile Toggle Container */
     [data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #mobile-controls) {
