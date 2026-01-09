@@ -378,7 +378,7 @@ div[data-baseweb="select"] svg {
     [data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #mobile-controls) {
         display: flex !important;
         position: fixed;
-        top: 3.5rem;
+        top: 2.5rem;
         right: 4rem;
         z-index: 999999;
         width: auto !important;
