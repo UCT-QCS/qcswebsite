@@ -371,11 +371,16 @@ div[data-baseweb="select"] svg {
         display: none !important;
     }
 
+    /* Hide Streamlit Header on Mobile */
+    header[data-testid="stHeader"] {
+        display: none !important;
+    }
+
     /* Show and Position Mobile Toggle Container */
     [data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #mobile-controls) {
         display: flex !important;
         position: fixed;
-        top: 0.8rem;
+        top: 3.5rem;
         right: 4rem;
         z-index: 999999;
         width: auto !important;
