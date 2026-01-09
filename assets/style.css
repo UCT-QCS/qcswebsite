@@ -261,8 +261,8 @@ div.stButton>button:hover {
     [data-testid="stVerticalBlock"]:has(> [data-testid="stElementContainer"] #mobile-controls) {
         display: flex !important;
         position: fixed;
-        top: 3.5rem;
-        right: 4rem;
+        top: 1.5rem;
+        right: 2rem;
         z-index: 999999;
         width: auto !important;
         padding: 0;
