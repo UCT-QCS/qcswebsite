@@ -292,3 +292,36 @@ div.stButton>button:hover {
         justify-content: flex-start !important;
     }
 }
+
+/* Sidebar Base Styles */
+[data-testid="stSidebar"] {
+    /* Background is handled dynamically in helpers.py, but we set transitions here */
+    transition: background-color 0.3s ease;
+}
+
+/* Fix for mobile menu readability */
+@media (max-width: 768px) {
+    /* Ensure sidebar text is bold and high contrast on mobile */
+    [data-testid="stSidebar"] .stText, [data-testid="stSidebar"] p {
+        font-weight: 600 !important;
+        letter-spacing: 0.5px;
+    }
+    
+    /* Reposition the 'close sidebar' arrow so it doesn't overlap logo */
+    [data-testid="stSidebar"] [data-testid="stSidebarCollapseButton"] {
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+    }
+}
+
+/* Feature/Card Styles */
+.feature-card {
+    background: rgba(38, 39, 48, 0.6);
+    border-radius: 15px;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
