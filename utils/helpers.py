@@ -34,6 +34,29 @@ def render_navigation(current_file_path=None):
             
     # Apply CSS
     load_css(st.session_state.theme)
+
+    # --- SIDEBAR BLUR ---
+    if st.session_state.theme == "light":
+        # Light frosted
+        sidebar_bg = "rgba(255, 255, 255, 0.7)"   
+    else:
+        # Dark frosted
+        sidebar_bg = "rgba(14, 17, 23, 0.7)"    
+
+    st.markdown(f"""
+        <style>
+            [data-testid="stSidebar"] {{
+                background-color: {sidebar_bg} !important;
+                backdrop-filter: blur(15px) !important;
+                -webkit-backdrop-filter: blur(15px) !important;
+                border-right: 1px solid rgba(255, 255, 255, 0.1);
+            }}
+            /* Ensures no solid nested divs block the blur */
+            [data-testid="stSidebar"] > div:first-child {{
+                background-color: transparent !important;
+            }}
+        </style>
+    """, unsafe_allow_html=True)
     
     # --- TOP SITES NAVIGATION ---
     # Hide sidebar by default
