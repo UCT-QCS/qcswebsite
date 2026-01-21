@@ -86,7 +86,7 @@ with m_col2:
     st.markdown("""
     Becoming a member of UCT QCS opens the door to the future of computing. 
     
-    **Registration Fee:** <span class="highlight-text">R150.00</span> / year
+    **Registration Fee:** <span class="highlight-text">free</span>
     
     **Exclusive Benefits:**
     - ⚛️ **IBM Quantum Access**: Open plan account access to IBM's quantum computers.
