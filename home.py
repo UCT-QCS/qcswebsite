@@ -31,6 +31,23 @@ with st.container():
         </p>
         """, unsafe_allow_html=True)
 
+# --- LATEST NEWS SECTION ---
+st.markdown("---")
+with st.container():
+    st.markdown('<div class="feature-card" style="margin-top: 10px; border-left: 5px solid #00d4ff;">', unsafe_allow_html=True)
+    c1, c2 = st.columns([3, 1])
+    with c1:
+        st.markdown("### 📢 New on the Blog: Applications of Quantum Computing")
+        st.markdown("""
+        From **Finance** to **Biology** and **Smart Grids**, discover how Quantum Computing is set to revolutionize industries beyond the lab. 
+        Explore our latest deep dive into the practical applications of QC.
+        """)
+    with c2:
+        st.markdown("<br>", unsafe_allow_html=True)
+        if st.button("Read the Article", key="read_blog_btn"):
+            st.switch_page("pages/04_Blog.py")
+    st.markdown('</div>', unsafe_allow_html=True) 
+
 # --- FEATURES SECTION ---
 st.markdown("### Why Join UCT QCS?")
 col1, col2, col3 = st.columns(3)

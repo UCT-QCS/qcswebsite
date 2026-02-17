@@ -1,0 +1,255 @@
+Sections for ‘Applications of Quantum Computing Across
+Different Fields’
+
+Finance: Quantum Computing Reduces Risks in Financial
+Networks
+
+Reference: Aboussalah, A.M., Chi, C. and Lee, C.G., 2023. Quantum computing
+reduces systemic risk in financial networks. Scientific Reports, 13(1), p.3990.
+
+In finance, quantum computing is used to resolve issues in increasing
+interdependencies between financial institutions. Inter-dependencies are
+associated with loans, holding shares, and other liabilities. Institutions are
+connected by their interdependencies and form a financial network.
+
+Failure in financial institutions can propagate across the industry. Financial
+institutions need to adjust for these inter-dependencies to prevent non-linear
+cascade failures which can have detrimental effects on the market. Networks
+need to optimize connections between institutions. Aboussalah et al.
+developed new techniques for classical and quantum partitioning for directed
+and weighted first graphs. Experimental results indicated that quantum
+partitioning is more robust to financial shocks; delays cascades failure phase
+transition; reduces total number of failures of convergence under systemic
+risks with reduced timed complexity. The one-stage optimization algorithm
+globally optimizes the cross-holdings across the interbank network in order to
+minimize the total loss. “Using quantum partitioning for our two-stage
+optimization creates better partitions which further delays the phase
+transition of cascades and comes with additional computational efficiency
+benefits due to quantum superposition effects. However, we were only able to
+test up to 50 organizations due to quantum hardware limitations but quantum
+hardware will improve over time.”
+Applications of Quantum Computing in Biology
+References: {Ghamsari, M.S., 2025. Quantum computing applications in biology.
+Discover Computing, 28(1), p.276.} {Kumar, G., Yadav, S., Mukherjee, A., Hassija, V.
+and Guizani, M., 2024. Recent advances in quantum computing for drug discovery and
+development. IEEE Access, 12, pp.64491-64509.} {Lau, B., Emani, P.S., Chapman, J.,
+Yao, L., Lam, T., Merrill, P., Warrell, J., Gerstein, M.B. and Lam, H.Y., 2023. Insights
+from incorporating quantum computing into drug design workflows. Bioinformatics,
+39(1), p.btac789.}
+
+Quantum biology is the area of study that seeks to elucidate biological processes that
+classical physics and computational techniques cannot fully explain, providing evidence
+for the presence of quantum phenomena in living organisms. Examples include avian
+navigation using the Earth’s magnetic field, photosynthesis, and genomic processes such
+as DNA transmutation. Quantum effects such as coherence, tunneling and entanglement.
+Coherence is believed to allow coordination and synchronization of individual
+components within a biological system across various spatial domains.
+
+“Quantum Computing has significant potential to advance sci-ence and technology,
+particularly in areas like molecular biology. However, in the nearfuture, classical
+computers will still be essential for many everyday applications. Quan-tum Computing
+enhances computational drug discovery by improving the accuracyand efficiency of
+simulations, strengthening machine learning models, and speeding upthe pharmaceutical
+research process from initial screening, to preclinical evaluation. Italso supports research
+onto complex diseases, fostering more equitable healthcare andresilience against global
+health crises.”
+
+“Lau et al. discuss the concept of HypaCADD, a hybrid classical-quantum
+workflow method for determining ligand binding to proteins, and also
+considers genetic mutations. They discussed how HypaCADD helps combine
+classical docking and molecular dynamics with Quantum Machine Learning
+(QML) to get a report on the impact of mutation. This paper outlines a neural
+network constructed using qubit-rotation gates. It maps a classical machine
+learning module onto QC. This is explained by taking a case study of the
+novel coronavirus (SARS-CoV-2) protease and its mutants. This paper also
+states how QML performs on par with classical computing, if not better. It
+summarises a successful strategy for leveraging QC for CADD by HypaCADD.”
+Cybersecurity
+References: {Yalcin, H., Daim, T., Moughari, M.M. and Mermoud, A., 2024.
+Supercomputers and quantum computing on the axis of cyber security. Technology in
+Society, 77, p.102556.} {Baseri, Y., Chouhan, V. and Ghorbani, A., 2024. Cybersecurity
+in the quantum era: Assessing the impact of quantum computing on infrastructure. arXiv
+preprint arXiv:2404.10659.}
+
+“Quantum computing and supercomputers are technologies that have the potential to
+revolutionize many industries, but also carry significant cybersecurity risks [1,2].
+Quantum computers can handle much larger data sets than even the world's most
+powerful supercomputers based on classical computing, while they have the power to
+perform much more complex calculations [3]. Although quantum computers are still in
+their infancy, they have the potential to be considered in terms of cybersecurity threats.”
+
+“Organizations are actively researching and developing quantum-resistant
+encryption methods and security protocols to mitigate these
+potential risks. Shor’s algorithm directly breaks RSA and the Digital Signature Standard
+in polynomial time. Variations of the same idea break elliptic curve cryptography and
+more general class-group systems in polynomial time.
+
+For comparison, RSA and elliptic curve cryptography are believed to be secure when the
+attacker is not equipped with a quantum computer. ”
+
+
+Quantum Computing in Chemistry and Chemical Engineering
+References: {Weidman, J.D., Sajjan, M., Mikolas, C., Stewart, Z.J., Pollanen, J., Kais,
+S. and Wilson, A.K., 2024. Quantum computing and chemistry. Cell Reports Physical
+Science, 5(9).} {Imoto, T., Susa, Y., Miyazaki, R. and Matsuzaki, Y., 2024. Universal
+quantum computation using quantum annealing with the transverse-field Ising
+Hamiltonian. arXiv preprint arXiv:2402.19114.}
+
+“Though classical computers have had a monumental impact on science, there are still
+many types of computational tasks and problems that remain intractable in terms of
+scale even for the largest classical machines. In chemistry, for example, the many-body
+entangled states underlying the electronic structure of a molecule cannot be modeled
+fully even on today’s most powerful computers. Instead, numerous approximations are
+required to make computations feasible for larger molecules. These approximations can
+miss important electronic or electron-nuclear effects, especially for complicated
+molecular systems such as complexes involving transition metals or heavy elements.”
+Imoto et al. present a practice method for implementing universal quantum computation
+within the conventional quantum annealing architecture using the transverse-field Ising
+Hamiltonian. Method relies on an adiabatic transformation of the Hamiltonian, changing
+from transverse fields to a ferromagnetic interaction regime where the ground states
+become degenerate. “we remark that arbitrary unitary quantum gates can be constructed
+by combining several types of unitary gates, called universal gate sets. Typically, either
+phase accumulation (Ramsey interferometry) or application of an oscillating
+field (such as Rabi oscillations) is adopted to implement the gate operations for a solid-
+state quantum computer. It has the potential for a wide array of applications,
+including quantum chemistry, machine learning, financial engineering, optimization
+problems, and decrypting ciphers. Most quantum algorithms to achieve
+quantum speed-up need quantum error collection, exemplified by a surface code. This
+paradigm, known as fault-tolerant quantum computation(FTQC),
+requires thousands of physical qubits per logical qubit to effectively suppress the noise
+effect. Consequently, it is estimated that FTQC will at least require 10
+million qubits to perform computations beyond the capabilities of existing classical
+computers. Unlike the previous approach to perform the gate operations by either
+applying an oscillating field or accumulating a relative phase, we utilize the degenerate
+ground states to perform the X-rotation gate and controlled-not gate. We demonstrate the
+effectiveness of our method by numerical simulations and experimental results.
+Importantly, we do not use microwave pulses to implement gate operations. This feature
+enhances scalability, as evidenced by the large-scale devices developed by D-Wave Inc.
+Employing only the transverse-field Ising model, our approach holds substantial promise
+for developing large-scale gate-based quantum computers.”
+
+
+Quantum Computing in Physics and Electrical Engineering
+
+References: {Ullah, M.H., Eskandarpour, R., Zheng, H. and Khodaei, A., 2022. Quantum computing
+for smart grid applications. IET Generation, Transmission & Distribution, 16(21), pp.4239-4257.}
+{Kumar, M.S., Krishna, R.V.V., Satyanarayana, V. and Ranjit, P.S., 2024. Battery Revolution: Quantum
+Computing and Machine Intelligence Synergy. In Real-World Challenges in Quantum Electronics and
+Machine Computing (pp. 30-42). IGI Global Scientific Publishing.} {Khalid, A., Tufail, S. and Sarwat,
+A.I., 2021. A review on quantum computing approach for Next-Generation energy storage solution.
+SoutheastCon 2021, pp.1-7.}
+“The electric utility companies are slowly advancing towards
+employing QC in various applications. Enel, an Italian multinational electricity and gas distributor,
+made a partnership with
+Data Reply, a company that offers AI-powered advanced data
+analytics, to solve combinatorial optimization problems based
+on the quadratic unconstrained binary optimization (QUBO)
+model that creates an optimal plan for assigning maintenance
+work for the crews. A UK-based utility company E.ON partnered with IBM, and
+aims to implement quantum solutions for decentralized energy
+infrastructure with DERs… A power flow study, also called load-flow analysis, is a steadystate analysis
+to compute the currents, voltages, and real,
+reactive, and apparent power flows in a system under specified
+load settings. Power flow analyses are essential for the efficient
+management of electric power systems. Describes a
+fast decoupled power flow algorithm based on a quantum state
+that utilizes Hermitian and constant Jacobian matrices. Also,
+a computationally improved Harrow-Hassidim-Lloyd (HHL)
+algorithm is presented to deal with the fast decoupled power
+flow by quantum phase estimation and reciprocal rotation. A DC power flow problem is solved using
+the HHL
+algorithm, and it was demonstrated with a faster convergence
+rate that the grid security can be enhanced using QC techniques.
+However, the next generation quantum computers with large
+quantum depths, qubit numbers, long coherence time, and lower
+noises may be required to apply such approaches in large-scale
+power systems, as suggested in… The current research in QC for smart grid
+applications can be classified into two main categories. Category
+1 concerns implementing classical algorithms in conventional
+computers replicating quantum mechanics fundamentals such
+as superposition, entanglement, and error correction and detec-TABLE 3 QC Smart Grid
+applicationsApplication Category 1 Category 21 Power Flow - [41–44]
+2 PMU Placement
+3 Unit Commitment
+4 Fault Management
+5 Smart Grids’ Cyber Security
+6 Stability Assessment
+7 Transient Analysis
+8 Reliability Assessment
+9 Facility Location-allocation
+10 Power System Control
+11 Forecasting
+tion. It also includes quantum cryptography, communication,
+and simulations. Category 2 involves implementing computationally expensive algorithms on real-time
+quantum computers.
+The literature presented in this paper, summarized in Table 3,
+is related to various smart grid applications, which are categorized into the classes mentioned above.
+However, a detailed
+summary of the literature is demonstrated in Table 4.3.1 Power flowA power flow study, also called
+load-flow analysis, is a steadystate analysis to compute the currents, voltages, and real,
+reactive, and apparent power flows in a system under specified
+load settings. Power flow analyses are essential for the efficient
+management of electric power systems. describes a
+fast decoupled power flow algorithm based on a quantum state
+that utilizes Hermitian and constant Jacobian matrices. Also,
+a computationally improved Harrow-Hassidim-Lloyd (HHL)
+algorithm is presented to deal with the fast decoupled power
+flow by quantum phase estimation and reciprocal rotation. a DC power flow problem is solved using
+the HHL
+algorithm, and it was demonstrated with a faster convergence
+rate that the grid security can be enhanced using QC techniques.
+However, the next generation quantum computers with large
+quantum depths, qubit numbers, long coherence time, and lower
+noises may be required to apply such approaches in large-scale
+power systems, as suggested in 3.2 Optimal PMU placementOptimal phasor measurement unit (PMU)
+placement is a technique for reducing the number of phasor measurement units
+(PMUs) necessary while ensuring that the complete power system is fully visible. The power system is
+identified as observable
+when the voltages of all buses in it are known. the
+feasibility of QC is studied in solving optimal PMU placement optimization problems.”
+
+
+“Although QC provides solutions corresponding to complex
+particle rotations, there are multiple sources through which
+errors get added on to the results. For instance, there is a possibility that any two particles would not
+rotate to the same degree
+when entangled. This is mainly due to the limited quality of
+the control signals and the qubits sensitivity. Although, qubitsare kept in an isolated environment that
+restricts unexpected
+movements, they tend to interact with the environment and
+as a result, possibly lose the stored information along with
+the entanglement. This process is termed as decoherence
+and is being compensated using a quantum error correction
+approach, which is also used to reduce quantum noise (that
+get incorporated into the microwave signals). However, this
+approach limits the number of qubits and the amount of
+processing that can be done with them .
+To put this study into perspective, since the information
+pertaining to the state of the particle is expressed as a qubit, a
+particle in a standby mode could be considered to be analogous
+to an electrochemical battery, but it requires qubit operations
+that comply with the postulates of QM, in order to absorb/extract energy (charge/discharge). Towards
+this, the quantum circuits and algorithms tailoring capability using Python allows battery researchers to
+perform P-QB simulations
+including battery parameter predicting/forecasting
+by making customized adjustments. Proper designing and
+application of work extraction protocols, ways to maximize
+the quantum entanglement, and quantum advantage will have
+a positive impact towards extracting maximum benefit from
+P-QB simulations. This is still an early stage for quantum
+algorithms to make drastic changes. Although multiple QC’s
+have already been developed or are in the process, accessiblequbits restriction is a major limiting factor
+for both P-QB
+and C-QB simulations. This paper provides a review of the
+concepts linking particles' QM, and QC approaches together,
+for their application in the development of QBs. The approach
+that QB manufacturers would apply to extend its scalability
+to large scale applications still remains unknown. Finally, it
+is evident that the development and further advancements in
+QBs is closely linked with the developments in QC, hence the
+authors are of the impression that although this is an early
+stage for any QC driven innovations leading to formation
+of next generation energy storage technologies, the works
+discussed in this review indeed lay the foundation for future
+improvements.”
+
