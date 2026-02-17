@@ -55,7 +55,7 @@ else:
         # Citation Card
         if 'pdf_url' in current_blog:
             # IEEE Citation format: [1] A. Author, "Title," Source, Month Year. [Online]. Available: URL
-            citation_text = f'[1] {current_blog["author"]}, "{current_blog["title"]}", *Nature Communications*, {current_blog["date"]}. [Online]. Available: {current_blog["pdf_url"]}'
+            citation_text = f'[1] {current_blog["author"]}, "{current_blog["title"]}", *{current_blog["publisher"]}*, {current_blog["date"]}. [Online]. Available: {current_blog["pdf_url"]}'
             
             st.markdown("---")
             st.markdown("### Citation")
