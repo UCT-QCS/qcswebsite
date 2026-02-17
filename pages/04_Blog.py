@@ -86,5 +86,11 @@ else:
                 """,
                 unsafe_allow_html=True
             )
+
+        # Additional References
+        if 'references' in current_blog and current_blog['references']:
+            st.markdown("#### Document References")
+            for ref in current_blog['references']:
+                st.markdown(f"- {ref}")
     else:
         st.error("Blog post not found.")
