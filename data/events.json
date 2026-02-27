@@ -10,17 +10,17 @@
     },
     {
         "id": 2,
-        "title": "Opening Event",
-        "date": "2026-02-13",
-        "time": "17:00 - 19:00",
-        "description": "Official welcome event for new members. Introduction to the year's roadmap and networking.",
+        "title": "UCT QCS Inaugural Opening Event",
+        "date": "2026-03-04",
+        "time": "17:30 - 18:30",
+        "description": "Gather around. We are thrilled to officially invite you to the UCT Quantum Computing Society Inaugural Opening Event. As we progress through our monitoring phase, we are moving from administrative setup to high-impact content. Featured Guest Speaker: Ndivhuwo Nyase (Research Scientist at IBM Research). Topic: 'Journey into Quantum Applications'. Includes Classical vs Quantum Quiz & Prizes!",
         "type": "Social",
-        "location": "Molly Blackburn Hall"
+        "location": "SNAPE LT1 (UCT Upper Campus)"
     },
     {
         "id": 3,
         "title": "Basics of Quantum Computing",
-        "date": "2026-03-12",
+        "date": "2026-03-25",
         "time": "18:00 - 19:30",
         "description": "An introductory lecture on Qubits, Superposition, and Entanglement. No physics background required!",
         "type": "Educational",

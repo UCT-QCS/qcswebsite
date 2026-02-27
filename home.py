@@ -12,40 +12,29 @@ st.set_page_config(
 helpers.render_navigation("home.py")
 
 # --- HERO SECTION ---
-# --- HERO SECTION ---
 with st.container():
-    st.markdown('<div id="hero-marker"></div>', unsafe_allow_html=True)
-    cola, col_b, col_c = st.columns([2.45,1,2])
-    with col_b:
-        st.image("assets/logo.png", width=150)
+    st.image("assets/opening-event-header.png", width='stretch')
 
-    # Logo (centered)
-    col1, col2, col3 = st.columns([1,2,1])
-    with col2:
-        st.markdown('<h1 class="hero-title"; align="center">Quantum Computing Society</h1>', unsafe_allow_html=True)
-        st.markdown('<p class="hero-subtitle"; align="center">University of Cape Town</p>', unsafe_allow_html=True)
-        st.markdown("""
-        <p style='font-size: 1.2rem; color: #00d4ff; max-width: 800px; margin: 0 auto; line-height: 1.6;'; align="center">
-            Leading the promotion and advocation of Quantum Computing in Africa. <br>
-            Bridging the gap between academia and the quantum revolution.
-        </p>
-        """, unsafe_allow_html=True)
-
-# --- LATEST NEWS SECTION ---
+# --- INAUGURAL EVENT ANNOUNCEMENT ---
 st.markdown("---")
 with st.container():
     st.markdown('<div class="feature-card" style="margin-top: 10px; border-left: 5px solid #00d4ff;">', unsafe_allow_html=True)
     c1, c2 = st.columns([3, 1])
     with c1:
-        st.markdown("### 📢 New on the Blog: Applications of Quantum Computing")
+        st.markdown("### � UCT QCS Inaugural Opening Event")
         st.markdown("""
-        From **Finance** to **Biology** and **Smart Grids**, discover how Quantum Computing is set to revolutionize industries beyond the lab. 
-        Explore our latest deep dive into the practical applications of QC.
+        **Date:** Wednesday, 4 March 2026 | **Time:** 17:30 - 18:30 | **Venue:** SNAPE LT1
+        
+        Join us for our first major step in demonstrating the multidisciplinary power of quantum technology. 
+        Featuring **Ndivhuwo Nyase**, Research Scientist at IBM Research, on *"Journey into Quantum Applications"*.
+        
+        **Classical vs Quantum Quiz & Prizes:** Top performer wins official UCT QCS merchandise!
         """)
     with c2:
         st.markdown("<br>", unsafe_allow_html=True)
-        if st.button("Read the Article", key="read_blog_btn"):
-            st.switch_page("pages/04_Blog.py")
+        st.link_button("RSVP Now", "https://forms.gle/2pkbioVZcVwQhD2WA", width='stretch')
+        if st.button("View Event Details", key="view_event_btn"):
+            st.switch_page("pages/02_Events.py")
     st.markdown('</div>', unsafe_allow_html=True) 
 
 # --- FEATURES SECTION ---
@@ -96,7 +85,7 @@ st.markdown("<br>", unsafe_allow_html=True)
 m_col1, m_col2 = st.columns([1, 1])
 
 with m_col1:
-    st.image("assets/quantum_chandelier.png", width="stretch")
+    st.image("assets/ndivhuwo-keynote.png", width='stretch')
 
 with m_col2:
     st.markdown("### Membership Details")

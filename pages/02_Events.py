@@ -138,3 +138,8 @@ elif not month_events.empty:
                 pass # Just expands
 else:
     st.info(f"No events scheduled for {calendar.month_name[month]} {year}.")
+
+# --- EVENT POSTER ---
+st.markdown("---")
+st.markdown("### 🖼️ Event Poster")
+st.image("assets/Opening_Event_Keynote_Light_Mode.jpg", width=800, caption="UCT QCS Inaugural Opening Event Poster")
