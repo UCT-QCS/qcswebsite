@@ -142,4 +142,4 @@ else:
 # --- EVENT POSTER ---
 st.markdown("---")
 st.markdown("### 🖼️ Event Poster")
-st.image("assets/Opening_Event_Keynote_Light_Mode.jpg", width=800, caption="UCT QCS Inaugural Opening Event Poster")
+st.image("assets/accenture-poster.png", width=800, caption="UCT QCS Inaugural Opening Event Poster")

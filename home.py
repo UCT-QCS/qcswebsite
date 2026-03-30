@@ -13,7 +13,7 @@ helpers.render_navigation("home.py")
 
 # --- HERO SECTION ---
 with st.container():
-    st.image("assets/opening-event-header.png", width='stretch')
+    st.image("assets/accenture-witsq-event.png", width='stretch')
 
 # --- INAUGURAL EVENT ANNOUNCEMENT ---
 st.markdown("---")
@@ -21,18 +21,17 @@ with st.container():
     st.markdown('<div class="feature-card" style="margin-top: 10px; border-left: 5px solid #00d4ff;">', unsafe_allow_html=True)
     c1, c2 = st.columns([3, 1])
     with c1:
-        st.markdown("### � UCT QCS Inaugural Opening Event")
+        st.markdown("### 🛎 WitsQ & IBM Seminar Series: Talk by Accenture")
         st.markdown("""
-        **Date:** Wednesday, 4 March 2026 | **Time:** 17:30 - 18:30 | **Venue:** SNAPE LT1
+        **Date:** Tuesday, 31 March 2026 | **Time:** 13:15 - 14:30 | **Venue:** Online
         
-        Join us for our first major step in demonstrating the multidisciplinary power of quantum technology. 
-        Featuring **Ndivhuwo Nyase**, Research Scientist at IBM Research, on *"Journey into Quantum Applications"*.
+        The UCT QCS continues its efforts to integrate into the South African quantum ecosystem. Tomorrow's talk demonstrates the power of collaboration as **Satish Nrusimhadevara** (Managing Director of Technology Sales & Partnerships Africa at Accenture) describes the *"Path taken by Technology from Labs to Business"*.
         
-        **Classical vs Quantum Quiz & Prizes:** Top performer wins official UCT QCS merchandise!
+        This series is also supported by the South African Quantum Technology Initiative (SaQuTI), a leader in driving quantum technologies in our region.
         """)
     with c2:
         st.markdown("<br>", unsafe_allow_html=True)
-        st.link_button("RSVP Now", "https://forms.gle/2pkbioVZcVwQhD2WA", width='stretch')
+        st.link_button("Register Now", "https://urldefense.proofpoint.com/v2/url?u=https-3A__saqti.cmail20.com_t_d-2Dl-2Dghduie-2Dhlulzxdr-2Dy_&d=DwMFaQ&c=BSDicqBQBDjDI9RkVyTcHQ&r=yBEWz5K5D64cMEOsWiFK1YGQcdUGL7dcxwZXbjeWqpY&m=5_hUMmTz_wlFn0CWNDbckj6gT0IOhq9VILbjTjN6YYfkSD8I833cBlsb3SrAPCAH&s=aUtXU7dZz8gAreVuBefMH5_VqplSvHnlNwrQCa-GHd8&e=", width='stretch')
         if st.button("View Event Details", key="view_event_btn"):
             st.switch_page("pages/02_Events.py")
     st.markdown('</div>', unsafe_allow_html=True) 
@@ -85,7 +84,7 @@ st.markdown("<br>", unsafe_allow_html=True)
 m_col1, m_col2 = st.columns([1, 1])
 
 with m_col1:
-    st.image("assets/ndivhuwo-keynote.png", width='stretch')
+    st.image("assets/accenture-poster.png", width='stretch')
 
 with m_col2:
     st.markdown("### Membership Details")

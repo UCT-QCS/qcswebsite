@@ -97,5 +97,14 @@
         "description": "Closing the year with a bang! Awards ceremony and social dinner.",
         "type": "Social",
         "location": "Kirstenbosch (TBC)"
+    },
+    {
+        "id": 12,
+        "title": "Path taken by Technology from Labs to Business",
+        "date": "2026-03-31",
+        "time": "13:15 - 14:30",
+        "description": "Satish Nrusimhadevara - Managing Director of Technology Sales & Partnerships Africa at Accenture - describes the 'path taken by Technology to travel from Labs to Business' as part of the WitsQ & IBM Seminar Series. This series is also supported by the South African Quantum Technology Initiative (SaQuTI), a leader in driving quantum technologies in our region.",
+        "type": "Educational",
+        "location": "Online (WitsQ & IBM Seminar Series)"
     }
 ]
