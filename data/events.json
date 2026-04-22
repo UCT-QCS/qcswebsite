@@ -106,5 +106,14 @@
         "description": "Satish Nrusimhadevara - Managing Director of Technology Sales & Partnerships Africa at Accenture - describes the 'path taken by Technology to travel from Labs to Business' as part of the WitsQ & IBM Seminar Series. This series is also supported by the South African Quantum Technology Initiative (SaQuTI), a leader in driving quantum technologies in our region.",
         "type": "Educational",
         "location": "Online (WitsQ & IBM Seminar Series)"
+    },
+    {
+        "id": 13,
+        "title": "Intro to QIS: Bridge the gap between math and quantum logic",
+        "date": "2026-04-30",
+        "time": "17:30 - 19:00",
+        "description": "A UCT QCS Exclusive workshop! Bridge the gap between math theory and actual Quantum Logic. We'll translate theory into Bloch Spheres and Quantum Gates, and get foundational prerequisites for the upcoming Build-A-Thon. Meet the new Exec Team and see the project roadmap first-hand. Whether you're a Physics pro or a CS beginner, this is your entry point into the quantum ecosystem.",
+        "type": "Educational",
+        "location": "Online (MS Teams)"
     }
 ]
